@@ -7,6 +7,7 @@ import { PlanetDetailComponent } from './components/planet-detail/planet-detail.
 import { VaisseauDetailComponent } from './components/vaisseau-detail/vaisseau-detail.component';
 import { AddPlanetComponent } from './components/add-planet/add-planet.component';
 import { AddVaisseauComponent } from './components/add-vaisseau/add-vaisseau.component';
+import { EditPlanetComponent } from './components/edit-planet/edit-planet.component';
 
 
 
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'planets/:id', component: PlanetDetailComponent},
   { path: 'vaisseaux/ajout', component: AddVaisseauComponent},
 
-  { path: 'vaisseau/:id', component: VaisseauDetailComponent}
+  { path: 'vaisseau/:id', component: VaisseauDetailComponent},
+  { path: 'planets/update/:id', component: EditPlanetComponent}
   ];
 
 @NgModule({

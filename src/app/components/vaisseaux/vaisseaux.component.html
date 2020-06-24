@@ -1,8 +1,8 @@
 
 
 <div>
-<h1>les vaisseauxlll</h1>
-<a class="btn btn-primary" routerLink="/vaisseaux/ajout">Ajouter un vaisseau</a>
+<h1>les vaisseaux</h1>
+<a class="btn btn-danger" routerLink="/vaisseaux/ajout">Ajouter un vaisseau</a>
 <table class="table table-striped table-dark">
   <thead>
     <tr>
@@ -21,7 +21,7 @@
       <td>{{item.model}}</td>
       <td>{{item.lightSpeed}}</td>
       <td>{{item.nbPassenger}}</td>
-      <td><a class="btn btn-primary" [routerLink]="['/vaisseau',item.id]">Voir le détail de la vaisseau {{item.nom}}</a></td>
+      <td><a class="btn btn-danger" [routerLink]="['/vaisseau',item.id]">Voir le détail de la vaisseau {{item.nom}}</a></td>
     </tr>
 
   </tbody>

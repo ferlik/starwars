@@ -13,6 +13,10 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AddPlanetComponent } from './components/add-planet/add-planet.component';
 import { AddVaisseauComponent } from './components/add-vaisseau/add-vaisseau.component';
 import { FormsModule} from '@angular/forms';
+import { InitialPipe } from './pipes/initial.pipe';
+import { EditPlanetComponent } from './components/edit-planet/edit-planet.component';
+import { CommonModule } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,17 @@ import { FormsModule} from '@angular/forms';
     VaisseauDetailComponent,
     MenuComponent,
     AddPlanetComponent,
-    AddVaisseauComponent
+    AddVaisseauComponent,
+    InitialPipe,
+    EditPlanetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    CommonModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

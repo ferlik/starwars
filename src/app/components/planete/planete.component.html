@@ -1,6 +1,6 @@
 <div>
   <h1>les Planètes</h1>
-  <a class="btn btn-primary" routerLink="/planets/ajout">Ajouter une planète</a>
+  <a class="btn btn-danger" routerLink="/planets/ajout">Ajouter une planète</a>
 <table class="table table-striped table-dark">
   <thead>
     <tr>
@@ -19,7 +19,9 @@
       <td>{{item.nbHabitant}}</td>
       <td>{{item.allegiance}}</td>
       <td>{{item.nbKmTerre}}</td>
-      <td><a class="btn btn-primary" [routerLink]="['/planets',item.id]">Voir le détail de la planete {{item.nom}}</a></td>
+      <td><a class="btn btn-danger" [routerLink]="['/planets',item.id]">Voir le détail de la planete {{item.nom}}</a>
+      <a class="btn btn-danger" (click)="deletePlanet(item)">supprime</a>
+      <a class="btn btn-danger"  [routerLink]="['/planets/update',item.id]">Editer</a></td>
     </tr>
 
   </tbody>

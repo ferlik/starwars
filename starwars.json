@@ -1,0 +1,25 @@
+{
+  "planet": [
+    {
+      "id": 1,
+      "nom":"Tataouine",
+      "nbHabitant":8787878710,
+      "allegiance":"Atréide",
+      "nbKmTerre":8955222,
+      "image":"bdzjah.jpg"
+    }
+  ],
+  "vaisseau": [
+    {
+      "id":1,
+      "nom":"Faucon Millenuim",
+      "model":"spaceX",
+      "lightSpeed":"true",
+      "nbPassenger":80,
+      "image":"tfdt.jpg"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

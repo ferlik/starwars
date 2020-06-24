@@ -1,0 +1,24 @@
+<h1>Ajouter une planète</h1>
+
+<form #planetForm="ngForm">
+
+
+
+  <label for="nom"> le nom de la planète</label>
+  <input type="text" class="form-control" name="nom" id="nom" required [(ngModel)]="planet.nom">
+
+  <label for="id"> le nombre d'habitants</label>
+  <input type="number" class="form-control" name="nombre" id="id" required [(ngModel)]="planet.nbHabitant">
+
+  <label for="id"> le nom de l'Allegiance</label>
+  <input type="text" class="form-control" name="allegiance" id="allegiance" required [(ngModel)]="planet.allegiance">
+
+  <label for="id"> le nombre de Km en parsecs de la Terre</label>
+  <input type="number" class="form-control" name="nbKmTerre" id="nbKmTerre" required [(ngModel)]="planet.nbKmTerre">
+
+  <label for="id">Envoyez une image</label>
+  <input type="string" class="form-control" name="image" id="image" required [(ngModel)]="planet.image">
+
+  <input class="btn" [disabled]="!planetForm.valid" type="submit" value="Envoyer">
+
+</form>

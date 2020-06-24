@@ -1,0 +1,15 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class LoggerService {
+
+  constructor() { }
+
+  logg(): void {
+    console.log("coucou");
+
+  }
+}
+
